@@ -18,54 +18,71 @@
     <title>Poromodo</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-3 sidebar-container vh-100">
-          <div
-            class="row sidebar-inner-container mt-20 text-center flex-column"
-          >
-            <div class="col mt-5">
-              <h1 class="h1-title">
-                POMODORO
-              </h1>
+    <div id="app">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 sidebar-container vh-100">
+            <div
+              class="row sidebar-inner-container mt-20 text-center flex-column"
+            >
+              <div class="col mt-5">
+                <h1 class="h1-title">
+                  POMODORO
+                </h1>
+              </div>
+              <div class="col profile-container mt-5">
+                <img
+                  src="./img/7.jpg"
+                  alt="profile-picture"
+                  class="profile-picture-img"
+                />
+                <h3 class="profile-name mt-3">
+                  Imoto
+                </h3>
+              </div>
+              <div class="col menu-container p-0 vh-100">
+                <ul class="nav flex-column text-left">
+                  <li class="nav-item menu-link-container p-2 menu-link-active">
+                    <a class="nav-link" href="#">
+                      <span class="mdi mdi-account"></span>
+                      DashBoard</a
+                    >
+                  </li>
+                  <li class="nav-item menu-link-container p-2">
+                    <a class="nav-link" href="#">
+                      <span class="mdi mdi-chart-bar"></span>
+                      Analytics
+                    </a>
+                  </li>
+                  <li class="nav-item menu-link-container p-2">
+                    <a class="nav-link" href="#" aria-disabled="true">
+                      <span class="mdi mdi-library-music"></span>
+                      RingTones
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="col profile-container mt-5">
-              <img
-                src="./img/7.jpg"
-                alt="profile-picture"
-                class="profile-picture-img"
-              />
-              <h3 class="profile-name mt-3">
-                Imoto
-              </h3>
-            </div>
-            <div class="col menu-container p-0 vh-100">
-              <ul class="nav flex-column text-left">
-                <li class="nav-item menu-link-container p-2 menu-link-active">
-                  <a class="nav-link text-dark" href="#">
-                    <span class="mdi mdi-account"></span>
-                    DashBoard</a
-                  >
-                </li>
-                <li class="nav-item menu-link-container p-2">
-                  <a class="nav-link text-dark" href="#">
-                    <span class="mdi mdi-chart-bar"></span>
-                    Analytics
-                  </a>
-                </li>
-                <li class="nav-item menu-link-container p-2">
-                  <a class="nav-link text-dark" href="#" aria-disabled="true">
-                    <span class="mdi mdi-library-music"></span>
-                    RingTones
-                  </a>
-                </li>
-              </ul>
+          </div>
+          <div class="col-sm-9 tab-container">
+            <div class="row justify-content-between p-5">
+              <div class="col-4">
+                <h3 class="state-text">
+                  {{ isFocus ? "Focus Time" : "Break Time" }}
+                </h3>
+              </div>
+              <div class="col-5">
+                <button type="button" class="btn btn-primary btn-lg btn-block">
+                  <span class="mdi mdi-plus text-white"></span>
+                  NEW PROJECT
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-9 tab-container"></div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
