@@ -50,3 +50,11 @@ h1 {
 .state-text {
   color: #4a4a4a;
 }
+
+.countdown-circle {
+  stroke-dasharray: 999;
+  /*   stroke-dashoffset: -999; */
+  transition: all 0.8s ease-in-out;
+  transform: rotate(-90deg);
+  transform-origin: center;
+}
