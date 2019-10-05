@@ -64,8 +64,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-9 tab-container">
-            <div class="row justify-content-between p-5">
+          <div class="col-sm-9 tab-container p-5">
+            <div class="row justify-content-between">
               <div class="col-4">
                 <h3 class="state-text">
                   {{ isFocus ? "Focus Time" : "Break Time" }}
@@ -76,6 +76,26 @@
                   <span class="mdi mdi-plus text-white"></span>
                   NEW PROJECT
                 </button>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-7 shadow-sm timer-container p-4">
+                <div class="row">
+                  <div class="col-3 clock-container">
+                    <div class="clock"></div>
+                  </div>
+                  <div
+                    class="col-9 task-name-and-action-button-container"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-5 total-time-container">
+                <div class="row date-container"></div>
+                <div class="row">
+                  <div class="col">
+                    <div class="total-time"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

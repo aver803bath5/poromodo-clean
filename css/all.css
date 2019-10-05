@@ -50,3 +50,10 @@ h1 {
 .state-text {
   color: #4a4a4a;
 }
+
+.clock {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  background-color: #fff;
+}
