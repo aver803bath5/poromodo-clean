@@ -1,3 +1,11 @@
+* {
+  color: #4a4a4a;
+}
+
+h1 {
+  color: #82aaed;
+}
+
 .sidebar-container {
   background-color: #fff;
   box-shadow: 0px 0px 3px #00000029;
@@ -22,7 +30,23 @@
   background-color: #f8f9fa;
 }
 
+.menu-link-container * {
+  color: #b6b6b7;
+}
+
 .menu-link-active {
   background: transparent linear-gradient(285deg, #fbc2eb 0%, #a6c1ee 100%) 0%
     0% no-repeat padding-box;
+}
+
+.menu-link-active * {
+  color: #4a4a4a;
+}
+
+.menu-link-active *:hover {
+  color: #4a4a4a;
+}
+
+.state-text {
+  color: #4a4a4a;
 }
